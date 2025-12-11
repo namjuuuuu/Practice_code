@@ -1,0 +1,60 @@
+GitHub 사용법
+깃허브 = 온라인 저장소 + 협업 플랫폼
+: 코드를 온라인에 저장하고 버전 관리(git)와 협업을 쉽게 해주는 서비스
+
+* 기본 사용 흐름
+1) 로컬 PC와 연결
+터미널/PowerShell에서, 
+git clone https://github.com/사용자명/저장소명.git
+> 폴더가 pc에 생김 
+
+2) 코드 변경 후, git으로 저장
+코드 수정 후,
+git add .
+git commit -m "메시지"
+
+- add: 변경 파일을 git에 등록
+- commit: 변경 내용을 하나의 버전으로 기록
+
+3) GitHub로 업로드: push
+git push
+> GitHub 사이트에 코드가 올라가고 온라인 백업 완료
+
+* 자주 쓰는 명령어
+- git clone : GitHub repo를 내 pc로 가져오기
+- git add . : 변경된 파일 저장 준비
+- git commit -m " " : 변경 기록 찍기
+- git push : GitHub로 업로드
+- git pull :  GitHub에서 최신 변경 가져오기
+- git status : 현재 상태 확인
+
+* 작업
+- Issues
+: 버그, 할 일, 아이디어 기록 공간
+- Pull Requests(PR)
+: 협업 시 내 코드를 팀 저장소에 합치도록 요청하는 기능 + 코드 리뷰
+- Branch
+: main은 안정 버전, 새로운 기능 개발은 새 branch에서 진행
+예) git checkout -b feature/login
+
+* 기본 용어 설명
+- repository: 프로젝트 저장 공간
+- commit: 코드 변경 기록
+- branch: 다른 작업 공간
+- merge: 브랜치를 합치는 작업
+- pull request(PR): 합쳐 달라는 요청
+- fork: 다른 사람 repo를 내 계정으로 복사
+- README.md: 프로젝트 설명 파일
+
+* 구조
+Repo (프로젝트)
+ ├── Code
+ ├── Commits (버전들)
+ ├── Branches (작업 공간)
+ ├── Issues (할 일/버그)
+ ├── Pull Requests (협업)
+ └── Settings (권한/환경 설정)
+
+
+
+
